@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hexagon</title>
+    <style type="text/css">
+        .hexagon {
+            width: 100px;
+            height: 55px;
+            background-color: orange;
+            /* Change 'orange' to whatever color you want */
+            position: relative;
+        }
+
+        .hexagon:before,
+        .hexagon:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+        }
+
+        .hexagon:before {
+            top: -25px;
+            border-bottom: 25px solid orange;
+            /* Change 'orange' to whatever color you want */
+        }
+
+        .hexagon:after {
+            bottom: -25px;
+            border-top: 25px solid orange;
+            /* Change 'orange' to whatever color you want */
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        <a href="index.html">Home</a>
+    </p>
+    <br />
+    <div class="hexagon">
+
+    </div>
+</body>
+
+</html>
